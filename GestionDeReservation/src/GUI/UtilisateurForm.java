@@ -54,10 +54,10 @@ public class UtilisateurForm extends javax.swing.JInternalFrame {
         jPanel3.setForeground(new java.awt.Color(102, 255, 255));
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "New user", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 3, 36))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "create user", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Centaur", 1, 36))); // NOI18N
         jPanel1.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         jLabel1.setText("Name :");
 
         nomTxt.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -67,7 +67,7 @@ public class UtilisateurForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         jLabel2.setText("Last name :");
 
         prenomTxt.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -79,7 +79,7 @@ public class UtilisateurForm extends javax.swing.JInternalFrame {
         });
 
         updateUser.setBackground(new java.awt.Color(255, 204, 204));
-        updateUser.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
+        updateUser.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         updateUser.setText("Update");
         updateUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,7 +88,7 @@ public class UtilisateurForm extends javax.swing.JInternalFrame {
         });
 
         addUser.setBackground(new java.awt.Color(255, 204, 204));
-        addUser.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
+        addUser.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         addUser.setText("Create");
         addUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,7 +97,7 @@ public class UtilisateurForm extends javax.swing.JInternalFrame {
         });
 
         removeUser.setBackground(new java.awt.Color(255, 204, 204));
-        removeUser.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
+        removeUser.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         removeUser.setText("Delete");
         removeUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,7 +105,7 @@ public class UtilisateurForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         jLabel3.setText("Username:");
 
         usernameTxt.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -119,7 +119,7 @@ public class UtilisateurForm extends javax.swing.JInternalFrame {
         passwordTxt.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         passwordTxt.setToolTipText("");
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         jLabel4.setText("Password :");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -139,44 +139,43 @@ public class UtilisateurForm extends javax.swing.JInternalFrame {
                     .addComponent(nomTxt, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(prenomTxt, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(passwordTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(49, 49, 49)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(removeUser, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(addUser, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(updateUser, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44))
+                .addGap(65, 65, 65)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(removeUser, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addUser, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(updateUser, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(nomTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(prenomTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(usernameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(passwordTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(addUser)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(removeUser)
-                        .addGap(11, 11, 11)
-                        .addComponent(updateUser))))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(nomTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(prenomTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(usernameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(passwordTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addComponent(addUser)
+                .addGap(18, 18, 18)
+                .addComponent(removeUser)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(updateUser)
+                .addContainerGap())
         );
 
         jPanel2.setBackground(new java.awt.Color(102, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "My users's list", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 3, 36))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "list", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Centaur", 1, 36))); // NOI18N
 
         clientListTable.setFont(new java.awt.Font("Times New Roman", 2, 12)); // NOI18N
         clientListTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -184,7 +183,7 @@ public class UtilisateurForm extends javax.swing.JInternalFrame {
 
             },
             new String [] {
-                "ID", "First name", "Family name", "Username", "Password"
+                "ID", "First name", "Last name", "Username", "Password"
             }
         ) {
             Class[] types = new Class [] {

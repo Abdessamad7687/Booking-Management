@@ -71,7 +71,7 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="chambreEntreDatesMenuItem">
               <Properties>
-                <Property name="text" type="java.lang.String" value="RechecheChambreEntreDates"/>
+                <Property name="text" type="java.lang.String" value="Search for room"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chambreEntreDatesMenuItemActionPerformed"/>

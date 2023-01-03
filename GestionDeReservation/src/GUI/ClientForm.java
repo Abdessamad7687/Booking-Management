@@ -54,14 +54,14 @@ public class ClientForm extends javax.swing.JInternalFrame {
         jPanel3.setForeground(new java.awt.Color(102, 255, 255));
 
         jPanel2.setBackground(new java.awt.Color(102, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "My client's list", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 3, 24))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " list", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Centaur", 1, 24))); // NOI18N
 
         clientListTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "ID", "Name", "Family name", "Phone", "Email"
+                "ID", "Name", "Last name", "Phone", "Email"
             }
         ) {
             Class[] types = new Class [] {
@@ -104,9 +104,9 @@ public class ClientForm extends javax.swing.JInternalFrame {
         );
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "New client", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 3, 24))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Add client", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Centaur", 0, 24))); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Centaur", 0, 16)); // NOI18N
         jLabel1.setText("Name:");
 
         nomTxt.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -116,8 +116,8 @@ public class ClientForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
-        jLabel2.setText("Family name:");
+        jLabel2.setFont(new java.awt.Font("Centaur", 0, 16)); // NOI18N
+        jLabel2.setText("Last Name");
 
         prenomTxt.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         prenomTxt.setToolTipText("");
@@ -128,7 +128,7 @@ public class ClientForm extends javax.swing.JInternalFrame {
         });
 
         updateClient.setBackground(new java.awt.Color(255, 204, 204));
-        updateClient.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        updateClient.setFont(new java.awt.Font("Centaur", 0, 16)); // NOI18N
         updateClient.setText("Update");
         updateClient.setToolTipText("");
         updateClient.addActionListener(new java.awt.event.ActionListener() {
@@ -138,7 +138,7 @@ public class ClientForm extends javax.swing.JInternalFrame {
         });
 
         addClient.setBackground(new java.awt.Color(255, 204, 204));
-        addClient.setFont(new java.awt.Font("Times New Roman", 2, 16)); // NOI18N
+        addClient.setFont(new java.awt.Font("Centaur", 0, 16)); // NOI18N
         addClient.setText("Create");
         addClient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,7 +147,7 @@ public class ClientForm extends javax.swing.JInternalFrame {
         });
 
         removeClient.setBackground(new java.awt.Color(255, 204, 204));
-        removeClient.setFont(new java.awt.Font("Times New Roman", 2, 16)); // NOI18N
+        removeClient.setFont(new java.awt.Font("Centaur", 0, 16)); // NOI18N
         removeClient.setText("Delete");
         removeClient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,7 +155,7 @@ public class ClientForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Centaur", 0, 16)); // NOI18N
         jLabel3.setText("Phone:");
 
         telTxt.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -169,7 +169,7 @@ public class ClientForm extends javax.swing.JInternalFrame {
         emailTxt.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         emailTxt.setToolTipText("");
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Centaur", 0, 16)); // NOI18N
         jLabel4.setText("Email:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

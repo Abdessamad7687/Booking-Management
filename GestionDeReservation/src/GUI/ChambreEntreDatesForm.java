@@ -55,9 +55,9 @@ public class ChambreEntreDatesForm extends javax.swing.JInternalFrame {
         jPanel3.setBackground(new java.awt.Color(102, 255, 255));
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Find room between dates", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 3, 20))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Search for room", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Centaur", 1, 20))); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         jLabel4.setText("Client:");
 
         clientBox.addActionListener(new java.awt.event.ActionListener() {
@@ -66,13 +66,14 @@ public class ChambreEntreDatesForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         jLabel5.setText("Start day :");
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         jLabel6.setText("Last day :");
 
         chercherButton.setBackground(new java.awt.Color(255, 204, 204));
+        chercherButton.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         chercherButton.setText("Search");
         chercherButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +130,7 @@ public class ChambreEntreDatesForm extends javax.swing.JInternalFrame {
         );
 
         jPanel2.setBackground(new java.awt.Color(102, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "My list of rooms", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 3, 20))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "list", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Centaur", 1, 20))); // NOI18N
 
         chambreListTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

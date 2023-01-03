@@ -101,7 +101,7 @@ public class Main extends javax.swing.JFrame {
 
         jMenu2.setText("Recherche");
 
-        chambreEntreDatesMenuItem.setText("RechecheChambreEntreDates");
+        chambreEntreDatesMenuItem.setText("Search for room");
         chambreEntreDatesMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 chambreEntreDatesMenuItemActionPerformed(evt);

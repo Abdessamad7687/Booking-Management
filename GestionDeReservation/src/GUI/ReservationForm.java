@@ -51,7 +51,6 @@ public class ReservationForm extends javax.swing.JInternalFrame {
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         reservationListTable = new javax.swing.JTable();
-        genererPdfButton = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         clientBoxItems = new javax.swing.JComboBox<>();
@@ -72,7 +71,7 @@ public class ReservationForm extends javax.swing.JInternalFrame {
         jPanel3.setForeground(new java.awt.Color(102, 255, 255));
 
         jPanel2.setBackground(new java.awt.Color(102, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "My Reservation's list", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 3, 30))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "list", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Centaur", 1, 30))); // NOI18N
 
         reservationListTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -104,27 +103,13 @@ public class ReservationForm extends javax.swing.JInternalFrame {
             reservationListTable.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        genererPdfButton.setBackground(new java.awt.Color(255, 204, 204));
-        genererPdfButton.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
-        genererPdfButton.setText("Export pdf");
-        genererPdfButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                genererPdfButtonActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(212, 212, 212)
-                        .addComponent(genererPdfButton, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 525, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 525, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -132,25 +117,23 @@ public class ReservationForm extends javax.swing.JInternalFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(genererPdfButton)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "New Reservation", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 3, 30))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Add Reservation", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Centaur", 1, 30))); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         jLabel1.setText("Client:");
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         jLabel3.setText("Start day");
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         jLabel4.setText("Last day");
 
         addReservation.setBackground(new java.awt.Color(255, 204, 204));
-        addReservation.setFont(new java.awt.Font("Times New Roman", 2, 16)); // NOI18N
+        addReservation.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         addReservation.setText("Add");
         addReservation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,7 +142,7 @@ public class ReservationForm extends javax.swing.JInternalFrame {
         });
 
         removeReservation.setBackground(new java.awt.Color(255, 204, 204));
-        removeReservation.setFont(new java.awt.Font("Times New Roman", 2, 16)); // NOI18N
+        removeReservation.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         removeReservation.setText("Delete");
         removeReservation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,7 +151,7 @@ public class ReservationForm extends javax.swing.JInternalFrame {
         });
 
         updateReservation.setBackground(new java.awt.Color(255, 204, 204));
-        updateReservation.setFont(new java.awt.Font("Times New Roman", 2, 16)); // NOI18N
+        updateReservation.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         updateReservation.setText("Modify");
         updateReservation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -176,7 +159,7 @@ public class ReservationForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 2, 15)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Centaur", 0, 15)); // NOI18N
         jLabel2.setText("Room:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -210,7 +193,7 @@ public class ReservationForm extends javax.swing.JInternalFrame {
                         .addGap(18, 18, 18)
                         .addComponent(removeReservation, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(53, 53, 53)))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -345,40 +328,6 @@ public class ReservationForm extends javax.swing.JInternalFrame {
             }
         }
     }//GEN-LAST:event_updateReservationActionPerformed
-
-    private void genererPdfButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genererPdfButtonActionPerformed
-        // TODO add your handling code here:
-        String path = "C:\\Users\\Abdesamad\\Desktop\\Swing Gestion reservation\\pdf";
-        Document doc = new Document();
-        try{
-            PdfWriter.getInstance(doc, new FileOutputStream(path + "\\rapportReservation" + (++rapportCount) + ".pdf"));
-            doc.open();
-            PdfPTable tbl = new PdfPTable(5);
-            tbl.addCell("ID");
-            tbl.addCell("Client");
-            tbl.addCell("Chambre");
-            tbl.addCell("DateDebut");
-            tbl.addCell("DateFin");
-            for(int i =0; i<reservationListTable.getRowCount(); i++){
-                String id = reservationListTable.getValueAt(i, 0).toString();
-                String Client = reservationListTable.getValueAt(i, 1).toString();
-                String Chambre = reservationListTable.getValueAt(i, 2).toString();
-                String DateD = reservationListTable.getValueAt(i, 3).toString();
-                String DateF = reservationListTable.getValueAt(i, 4).toString();
-                tbl.addCell(id);
-                tbl.addCell(Client);
-                tbl.addCell(Chambre);
-                tbl.addCell(DateD);
-                tbl.addCell(DateF);
-            }
-            doc.add(tbl);
-            JOptionPane.showMessageDialog(this, "t PDF Report generated");
-            doc.close();
-            
-        }catch(Exception e){
-            JOptionPane.showMessageDialog(this, "Erreur: We're trying to find a solution, Please wait", "Error!", JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_genererPdfButtonActionPerformed
     
     private void loadReservationData(){
         model.setRowCount(0);
@@ -416,7 +365,6 @@ public class ReservationForm extends javax.swing.JInternalFrame {
     private javax.swing.JComboBox<Client> clientBoxItems;
     private com.toedter.calendar.JDateChooser dateDebutField;
     private com.toedter.calendar.JDateChooser dateFinField;
-    private javax.swing.JButton genererPdfButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

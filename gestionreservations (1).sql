@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 02 jan. 2023 à 16:33
+-- Généré le : mar. 03 jan. 2023 à 15:14
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.1.12
 
@@ -38,7 +38,11 @@ CREATE TABLE `categorie` (
 --
 
 INSERT INTO `categorie` (`id`, `code`, `libelle`) VALUES
-(9, '12', 'Chambre');
+(10, '14', 'Chambre double'),
+(11, '13', 'Cuisine'),
+(12, '13', 'Chambre simple'),
+(13, '6', 'master'),
+(14, '1', 'suite');
 
 -- --------------------------------------------------------
 
@@ -57,7 +61,9 @@ CREATE TABLE `chambre` (
 --
 
 INSERT INTO `chambre` (`id`, `telephone`, `categorie`) VALUES
-(1, '0687987987', 9);
+(2, '21677826873', 10),
+(3, '0663646156', 13),
+(4, '0653674636', 14);
 
 -- --------------------------------------------------------
 
@@ -72,6 +78,16 @@ CREATE TABLE `client` (
   `telephone` varchar(20) NOT NULL,
   `email` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `client`
+--
+
+INSERT INTO `client` (`id`, `nom`, `prenom`, `telephone`, `email`) VALUES
+(2, 'Ahmali', 'Abdessamad', '0631756131', 'abdessamadahmali'),
+(3, 'Ali', 'Bouali', '0663646156', 'bouali@gmail.com'),
+(5, 'Salima', 'Selmani', '0653674636', 'salima@gmail.com'),
+(6, 'Salima', 'Selmani', '0653674636', 'salimagmail.com');
 
 -- --------------------------------------------------------
 
@@ -91,6 +107,28 @@ CREATE TABLE `login` (
 
 INSERT INTO `login` (`id`, `name`, `password`) VALUES
 (1, 'root', 'root');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `reservation`
+--
+
+CREATE TABLE `reservation` (
+  `ID` int(11) NOT NULL,
+  `idClient` int(11) DEFAULT NULL,
+  `idChambre` int(11) DEFAULT NULL,
+  `dateDebut` varchar(50) NOT NULL,
+  `dateFin` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `reservation`
+--
+
+INSERT INTO `reservation` (`ID`, `idClient`, `idChambre`, `dateDebut`, `dateFin`) VALUES
+(1, 2, 2, '2023-01-03', '2023-01-05'),
+(2, 3, 4, '2023-01-02', '2023-01-05');
 
 -- --------------------------------------------------------
 
@@ -142,6 +180,14 @@ ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `reservation`
+--
+ALTER TABLE `reservation`
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `idClient` (`idClient`),
+  ADD KEY `idChambre` (`idChambre`);
+
+--
 -- Index pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
@@ -155,19 +201,19 @@ ALTER TABLE `utilisateur`
 -- AUTO_INCREMENT pour la table `categorie`
 --
 ALTER TABLE `categorie`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT pour la table `chambre`
 --
 ALTER TABLE `chambre`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `client`
 --
 ALTER TABLE `client`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `login`
@@ -176,10 +222,27 @@ ALTER TABLE `login`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT pour la table `reservation`
+--
+ALTER TABLE `reservation`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `reservation`
+--
+ALTER TABLE `reservation`
+  ADD CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idClient`) REFERENCES `client` (`id`),
+  ADD CONSTRAINT `reservation_ibfk_2` FOREIGN KEY (`idChambre`) REFERENCES `chambre` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
